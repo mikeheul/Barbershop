@@ -454,7 +454,7 @@ section {
 
 .barber-member {
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
     box-shadow: rgba(38, 57, 77, 0.567) 0px 20px 30px -10px;
     border-radius: 5px;
 }
@@ -487,16 +487,22 @@ section {
 
 .barber-member .fb-member {
     background: rgb(158,138,120);
+    font-size: 12px;
     display: block;
     color: #fff;
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     text-align: center;
-    line-height: 50px;
-    top: -50px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    line-height: 30px;
+    top: -30px;
+    right: 0;
+    /* transform: translate(-50%, 0); */
+    transition: 0.5s;
+}
+
+.barber-member .fb-member a {
+    color: #fff;
 }
 
 .barber-member .overlay h3 {
@@ -521,6 +527,10 @@ section {
 
 .barber-member:hover .overlay {
     bottom: 0;
+}
+
+.barber-member:hover .fb-member {
+    top: 0;
 }
 
 /** ============================= PARALLAX ========================================== */
